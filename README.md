@@ -60,17 +60,17 @@ This project develops and validates a **spatially-aware machine learning pipelin
 ```mermaid
 graph LR
     A[Google Earth Engine] --> B[SRTM Topography]
-    A --> C[Synthetic GEDI Metrics*]
-    B & C --> D[Preprocessing + Spatial Blocking]
+    A --> C[Synthetic GEDI Metrics]
+    B --> D[Preprocessing and Spatial Blocking]
+    C --> D
     D --> E[Linear Regression]
     D --> F[Random Forest]
-    D --> F2[XGBoost]
-    E & F & F2 --> G[Spatial Cross-Validation]
-    G --> H[SHAP Interpretability]
-    H --> I[Publication-Ready Outputs]
-    
-    style A fill:#4285f4,stroke:#3366cc,stroke-width:2px,color:white
-    style I fill:#34a853,stroke:#2e7d32,stroke-width:2px,color:white
+    D --> G[XGBoost]
+    E --> H[Spatial Cross-Validation]
+    F --> H
+    G --> H
+    H --> I[SHAP Interpretability]
+    I --> J[Publication-Ready Outputs]
 ```
 
 *\*Synthetic biomass/LiDAR metrics are ecologically-calibrated to match published GEDI-FIA statistical properties. This prototyping approach is endorsed by NASA ARSET for method development prior to full data access approval.*
