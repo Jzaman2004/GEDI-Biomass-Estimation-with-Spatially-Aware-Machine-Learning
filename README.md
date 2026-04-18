@@ -328,6 +328,13 @@ If you use this code, methodology, or outputs in your research, please cite:
 **Suggested acknowledgment**:  
 *"This research used code and methodology from Zaman & Zaman (2026), GitHub: https://github.com/Jzaman2004/GEDI-Biomass-Estimation-with-Spatially-Aware-Machine-Learning"*
 
+### Dataset References
+
+The project also relies on the official NASA GEDI-FIA fusion dataset records:
+
+- NASA Earthdata Catalog: [GEDI-FIA Fusion: Training Lidar Models To Estimate Forest Attributes](https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-gedi-fia-lidar-models-forests-2417-1)
+- NASA Open Data Portal: [GEDI-FIA Fusion: Training Lidar Models to Estimate Forest Attributes](https://data.nasa.gov/dataset/gedi-fia-fusion-training-lidar-models-to-estimate-forest-attributes)
+
 ---
 
 <p align="center">
